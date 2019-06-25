@@ -1,6 +1,9 @@
 var express = require('express');
 const app = express();
 
+app.use(express.json())
+
+
 const projects = [
   {
     id: 1,
@@ -37,8 +40,22 @@ app.get('/api/projects/:id', (req,res) => {
   }
 
   res.send(project)
+})
 
-  // res.send(req.params.id)
+app.post('/api/projects', (req,res) => {
+  if (!req.body.name || req.body.name.length < 3) {
+    res.status(400).send('Name is required and should be a minimum of 3 characters')
+  }
+  return;
+
+  let newProject = {
+    id: projects.length + 1,
+    name: req.body.name,
+    url: req.body.url
+  }
+
+  projects.push(newProject)
+  res.send(newProject)
 })
 
 
