@@ -28,13 +28,25 @@ app.get('/api/projects', (req,res) => {
 })
 
 app.get('/api/projects/:id', (req,res) => {
-  res.send(req.params.id)
+  let project = projects.find(projectObj => {
+    return projectObj.id === parseInt(req.params.id)
+  })
+
+  if (!project) {
+    res.status(404).send("The project with the given ID was not found.")
+  }
+
+  res.send(project)
+
+  // res.send(req.params.id)
 })
 
-app.get('/api/posts/:year/:month', (req,res) => {
-  res.send(req.params.year)
-  // res.send(req.query)
-})
+
+
+// app.get('/api/posts/:year/:month', (req,res) => {
+//   res.send(req.params.year)
+//   // res.send(req.query)
+// })
 
 
 // PORT
