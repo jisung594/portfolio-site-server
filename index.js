@@ -1,4 +1,5 @@
-var express = require('express');
+const express = require('express');
+const Joi = require('joi');
 const app = express();
 
 app.use(express.json())
@@ -43,10 +44,24 @@ app.get('/api/projects/:id', (req,res) => {
 })
 
 app.post('/api/projects', (req,res) => {
-  if (!req.body.name || req.body.name.length < 3) {
-    res.status(400).send('Name is required and should be a minimum of 3 characters')
+  // ** USING JOI TO VALIDATE **
+  const schema = {
+    name: Joi.string().min(3).required()
   }
-  return;
+
+  const result = Joi.validate(req.body, schema)
+
+  if (result.error) {
+    res.status(400).send(result.error)
+    return
+  }
+  // ** --------------------- **
+
+  // (validating w/o Joi)
+  // if (!req.body.name || req.body.name.length < 3) {
+  //   res.status(400).send('Name is required and should be a minimum of 3 characters')
+  //   return;
+  // }
 
   let newProject = {
     id: projects.length + 1,
