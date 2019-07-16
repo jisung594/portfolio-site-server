@@ -23,9 +23,9 @@ const projects = [
   }
 ]
 
-// app.get('/', (req,res) => {
-//   res.send('Hello World')
-// })
+app.get('/', (req,res) => {
+  res.send('Hello World')
+})
 
 app.get('/express-backend', (req,res) => {
   res.send({express: 'Express backend is now connected to React frontend!'})
