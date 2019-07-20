@@ -2,34 +2,84 @@ const express = require('express');
 const Joi = require('joi');
 const app = express();
 
-app.use(express.json())
+app.use(express.json());
 
+// ------------------------------------
+var cors = require('cors');
+app.use(cors());
+
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
+
+// app.use(cors({
+//   origin: 'http://localhost:5001'
+// }));
+
+// var corsOptions = {
+//   origin: '*',
+//   optionsSuccessStatus: 200
+// }
+//
+// app.get('/api/projects', cors(corsOptions), function (req, res, next) {
+//   res.json({msg: 'This is CORS-enabled for all.'})
+// })
+//
+// app.listen(80, function () {
+//   console.log('CORS-enabled web server listening on port 80')
+// })
+// ------------------------------------
 
 const projects = [
-  {
-    id: 1,
-    name: "Placard",
-    url: "https://placardny.herokuapp.com"
-  },
-  {
-    id: 2,
-    name: "Cropscity",
-    url: "http://cropscity.herokuapp.com"
-  },
-  {
-    id: 3,
-    name: "Monk Brewsource",
-    url: "https://monk-brewsource.herokuapp.com"
-  }
+  [
+    {
+      id: 1,
+      name: "Placard",
+      url: "https://placardny.herokuapp.com",
+      img: "https://imgur.com/vMVsZuW",
+      type: "dev"
+    },
+    {
+      id: 2,
+      name: "Cropscity",
+      url: "http://cropscity.herokuapp.com",
+      img: "https://imgur.com/2MeLsOU",
+      type: "dev"
+    },
+    {
+      id: 3,
+      name: "Monk Brewsource",
+      url: "https://monk-brewsource.herokuapp.com",
+      img: "https://imgur.com/GYvgA07",
+      type: "dev"
+    }
+  ],
+  [
+    {
+      id: 1,
+      name: "Batsu Poster 1",
+      img: "hi",
+      type: "design"
+    },
+    {
+      id: 2,
+      name: "Batsu Poster 2",
+      img: "bye",
+      type: "design"
+    }
+  ]
 ]
 
 app.get('/', (req,res) => {
   res.send('Hello World')
 })
 
-app.get('/express-backend', (req,res) => {
-  res.send({express: 'Express backend is now connected to React frontend!'})
-})
+// app.get('/express-backend', (req,res) => {
+//   // res.send({express: 'Express backend is now connected to React frontend!'})
+//   res.send(projects)
+// })
 
 app.get('/api/projects', (req,res) => {
   res.send(projects)
