@@ -2,35 +2,52 @@ const express = require('express');
 const Joi = require('joi');
 const app = express();
 
-app.use(express.json());
+
+// var createError = require('http-errors');
+// var express = require('express');
+// var path = require('path');
+// var cookieParser = require('cookie-parser');
+// var logger = require('morgan');
+// var app = express();
+//
+// // view engine setup
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'hjs');
+//
+// app.use(logger('dev'));
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
+// app.use(cookieParser());
+// app.use(express.static(path.join(__dirname, 'public')));
+//
+// // catch 404 and forward to error handler
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
+//
+// // error handler
+// app.use(function(err, req, res, next) {
+//   // set locals, only providing error in development
+//   res.locals.message = err.message;
+//   res.locals.error = req.app.get('env') === 'development' ? err : {};
+//
+//   // render the error page
+//   res.status(err.status || 500);
+//   res.render('error');
+// });
+
 
 // ------------------------------------
 var cors = require('cors');
 app.use(cors());
 
-// app.use(function(req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//   next();
-// });
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', "*");
+  res.header('Access-Control-Allow-Methods','GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+})
 
-// app.use(cors({
-//   origin: 'http://localhost:5001'
-// }));
-
-// var corsOptions = {
-//   origin: '*',
-//   optionsSuccessStatus: 200
-// }
-//
-// app.get('/api/projects', cors(corsOptions), function (req, res, next) {
-//   res.json({msg: 'This is CORS-enabled for all.'})
-// })
-//
-// app.listen(80, function () {
-//   console.log('CORS-enabled web server listening on port 80')
-// })
-// ------------------------------------
 
 const projects = [
   [
@@ -38,21 +55,21 @@ const projects = [
       id: 1,
       name: "Placard",
       url: "https://placardny.herokuapp.com",
-      img: "https://imgur.com/vMVsZuW",
+      img: "https://i.imgur.com/5Gf1TbN.png",
       type: "dev"
     },
     {
       id: 2,
       name: "Cropscity",
       url: "http://cropscity.herokuapp.com",
-      img: "https://imgur.com/2MeLsOU",
+      img: "https://i.imgur.com/CnxrZTJ.png",
       type: "dev"
     },
     {
       id: 3,
       name: "Monk Brewsource",
       url: "https://monk-brewsource.herokuapp.com",
-      img: "https://imgur.com/GYvgA07",
+      img: "https://i.imgur.com/u2j4Xsp.png",
       type: "dev"
     }
   ],
@@ -72,6 +89,7 @@ const projects = [
   ]
 ]
 
+
 app.get('/', (req,res) => {
   res.send('Hello World')
 })
@@ -83,6 +101,9 @@ app.get('/', (req,res) => {
 
 app.get('/api/projects', (req,res) => {
   res.send(projects)
+  // i liked her
+  // she had a serious energy with a light sense of humor
+  // beautiful big eyes, and she called mine mysterious
 })
 
 app.get('/api/projects/:id', (req,res) => {
@@ -129,12 +150,25 @@ app.post('/api/projects', (req,res) => {
 
 
 
-// app.get('/api/posts/:year/:month', (req,res) => {
-//   res.send(req.params.year)
-//   // res.send(req.query)
-// })
-
-
 // PORT
 const port = process.env.PORT || 5000
 app.listen(port, () => console.log(`Listening on port ${port}`))
+
+
+
+// Import Body parser
+let bodyParser = require('body-parser');
+// Import Mongoose
+let mongoose = require('mongoose');
+// Configure bodyparser to handle post requests
+app.use(bodyParser.urlencoded({
+   extended: true
+}));
+app.use(bodyParser.json());
+// Connect to Mongoose and set connection variable
+// Deprecated: mongoose.connect('mongodb://localhost/resthub');
+mongoose.connect('mongodb://localhost/resthub', { useNewUrlParser: true});
+var db = mongoose.connection;
+
+
+module.exports = app;
