@@ -77,13 +77,51 @@ const projects = [
     {
       id: 1,
       name: "Batsu Poster 1",
-      img: "hi",
+      img: "https://i.imgur.com/KwcAQXA.jpg",
       type: "design"
     },
     {
       id: 2,
       name: "Batsu Poster 2",
-      img: "bye",
+      img: "https://i.imgur.com/YbWPXP9.jpg",
+      type: "design"
+    },
+    {
+      id: 3,
+      name: "Batsu Poster 3",
+      img: "https://i.imgur.com/xK7T4qn.jpg",
+      type: "design"
+    },
+    {
+      id: 4,
+      name: "Batsu Poster 4",
+      img: "https://i.imgur.com/sh3etG0.jpg",
+      type: "design"
+    },
+
+
+    {
+      id: 5,
+      name: "5A Roasting Company (1)",
+      img: "https://i.imgur.com/24vmolS.jpg",
+      type: "design"
+    },
+    {
+      id: 6,
+      name: "5A Roasting Company (2)",
+      img: "https://i.imgur.com/Bsd4cZE.jpg",
+      type: "design"
+    },
+    {
+      id: 7,
+      name: "5A Roasting Company (3)",
+      img: "https://i.imgur.com/gklKPFn.jpg",
+      type: "design"
+    },
+    {
+      id: 8,
+      name: "5A Roasting Company (4)",
+      img: "https://i.imgur.com/MwBNzIX.jpg",
       type: "design"
     }
   ]
@@ -156,19 +194,19 @@ app.listen(port, () => console.log(`Listening on port ${port}`))
 
 
 
-// Import Body parser
-let bodyParser = require('body-parser');
-// Import Mongoose
-let mongoose = require('mongoose');
-// Configure bodyparser to handle post requests
-app.use(bodyParser.urlencoded({
-   extended: true
-}));
-app.use(bodyParser.json());
-// Connect to Mongoose and set connection variable
-// Deprecated: mongoose.connect('mongodb://localhost/resthub');
-mongoose.connect('mongodb://localhost/resthub', { useNewUrlParser: true});
-var db = mongoose.connection;
+// // Import Body parser
+// let bodyParser = require('body-parser');
+// // Import Mongoose
+// let mongoose = require('mongoose');
+// // Configure bodyparser to handle post requests
+// app.use(bodyParser.urlencoded({
+//    extended: true
+// }));
+// app.use(bodyParser.json());
+// // Connect to Mongoose and set connection variable
+// // Deprecated: mongoose.connect('mongodb://localhost/resthub');
+// mongoose.connect('mongodb://localhost/resthub', { useNewUrlParser: true});
+// var db = mongoose.connection;
 
 
 module.exports = app;
