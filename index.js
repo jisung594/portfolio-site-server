@@ -128,7 +128,7 @@ const projects = [
 ]
 
 
-app.get('http://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
+app.get('/', (req,res) => {
   res.send('Hello World')
 })
 
