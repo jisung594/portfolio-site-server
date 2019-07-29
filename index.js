@@ -157,7 +157,7 @@ app.get('http://jonathanchoi-api.herokuapp.com/api/projects/:id', (req,res) => {
   res.send(project)
 })
 
-app.post('/api/projects', (req,res) => {
+app.post('http://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
   // ** USING JOI TO VALIDATE **
   const schema = {
     name: Joi.string().min(3).required()
