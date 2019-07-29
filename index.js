@@ -140,12 +140,10 @@ app.get('/', (req,res) => {
 app.get('/api/projects', (req,res) => {
 // app.get('https://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
   res.send(projects)
-  // i liked her
-  // she had a serious energy with a light sense of humor
-  // beautiful big eyes, and she called mine mysterious
 })
 
-app.get('https://jonathanchoi-api.herokuapp.com/api/projects/:id', (req,res) => {
+app.get('/api/projects/:id', (req,res) => {
+// app.get('https://jonathanchoi-api.herokuapp.com/api/projects/:id', (req,res) => {
   let project = projects.find(projectObj => {
     return projectObj.id === parseInt(req.params.id)
   })
