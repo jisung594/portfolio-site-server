@@ -137,8 +137,8 @@ app.get('/', (req,res) => {
 //   res.send(projects)
 // })
 
-// app.get('/api/projects', (req,res) => {
-app.get('https://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
+app.get('/api/projects', (req,res) => {
+// app.get('https://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
   res.send(projects)
   // i liked her
   // she had a serious energy with a light sense of humor
