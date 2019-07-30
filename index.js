@@ -124,8 +124,6 @@ const projects = [
       img: "https://i.imgur.com/MwBNzIX.jpg",
       type: "design"
     },
-
-
     {
       id: 9,
       name: "EIS Housing (PSA)",
@@ -156,7 +154,6 @@ const projects = [
       img: "https://i.imgur.com/XZxOEKL.jpg",
       type: "design"
     },
-    ,
     {
       id: 14,
       name: "Joy (Essay by Zadie Smith)",
