@@ -145,7 +145,7 @@ app.get('/api/projects', (req,res) => {
 app.get('/api/projects/:id', (req,res) => {
 // app.get('https://jonathanchoi-api.herokuapp.com/api/projects/:id', (req,res) => {
   let project = projects.find(projectObj => {
-    return projectObj["id"] === parseInt(req.params.id)
+    return projectObj.id === parseInt(req.params.id)
   })
 
   if (!project) {
@@ -155,7 +155,7 @@ app.get('/api/projects/:id', (req,res) => {
   res.send(project)
 })
 
-app.post('https://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
+app.post('/api/projects', (req,res) => {
   // ** USING JOI TO VALIDATE **
   const schema = {
     name: Joi.string().min(3).required()
