@@ -76,25 +76,25 @@ const projects = [
   [
     {
       id: 1,
-      name: "Batsu Poster 1",
+      name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/KwcAQXA.jpg",
       type: "design"
     },
     {
       id: 2,
-      name: "Batsu Poster 2",
+      name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/YbWPXP9.jpg",
       type: "design"
     },
     {
       id: 3,
-      name: "Batsu Poster 3",
+      name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/xK7T4qn.jpg",
       type: "design"
     },
     {
       id: 4,
-      name: "Batsu Poster 4",
+      name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/sh3etG0.jpg",
       type: "design"
     },
@@ -102,26 +102,71 @@ const projects = [
 
     {
       id: 5,
-      name: "5A Roasting Company (1)",
+      name: "5A Roasting Company (Branding & Identity)",
       img: "https://i.imgur.com/24vmolS.jpg",
       type: "design"
     },
     {
       id: 6,
-      name: "5A Roasting Company (2)",
+      name: "5A Roasting Company (Branding & Identity)",
       img: "https://i.imgur.com/Bsd4cZE.jpg",
       type: "design"
     },
     {
       id: 7,
-      name: "5A Roasting Company (3)",
+      name: "5A Roasting Company (Branding & Identity)",
       img: "https://i.imgur.com/gklKPFn.jpg",
       type: "design"
     },
     {
       id: 8,
-      name: "5A Roasting Company (4)",
+      name: "5A Roasting Company (Branding & Identity)",
       img: "https://i.imgur.com/MwBNzIX.jpg",
+      type: "design"
+    },
+
+
+    {
+      id: 9,
+      name: "EIS Housing (PSA)",
+      img: "https://i.imgur.com/QXJke68.jpg",
+      type: "design"
+    },
+    {
+      id: 10,
+      name: "EIS Housing (PSA)",
+      img: "https://i.imgur.com/xN4T9xK.jpg",
+      type: "design"
+    },
+    {
+      id: 11,
+      name: "EIS Housing (PSA)",
+      img: "https://i.imgur.com/iGDdcgU.jpg",
+      type: "design"
+    },
+    {
+      id: 12,
+      name: "Monk Brewery (Branding & Identity)",
+      img: "https://i.imgur.com/jOe9UAL.jpg",
+      type: "design"
+    },
+    {
+      id: 13,
+      name: "Monk Brewery (Branding & Identity)",
+      img: "https://i.imgur.com/XZxOEKL.jpg",
+      type: "design"
+    },
+    ,
+    {
+      id: 14,
+      name: "Joy (Essay by Zadie Smith)",
+      img: "https://i.imgur.com/cyLfraF.jpg",
+      type: "design"
+    },
+    {
+      id: 15,
+      name: "Fictional BBC Magazine Spread",
+      img: "https://i.imgur.com/M5PmDsu.jpg",
       type: "design"
     }
   ]
