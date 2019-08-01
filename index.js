@@ -177,13 +177,13 @@ app.get('/express-backend', (req,res) => {
   // res.send(projects)
 })
 
-// app.get('/api/projects', (req,res) => {
-app.get('https://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
+app.get('/api/projects', (req,res) => {
+// app.get('https://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
   res.send(projects)
 })
 
-// app.get('/api/projects/:id', (req,res) => {
-app.get('https://jonathanchoi-api.herokuapp.com/api/projects/:id', (req,res) => {
+app.get('/api/projects/:id', (req,res) => {
+// app.get('https://jonathanchoi-api.herokuapp.com/api/projects/:id', (req,res) => {
   let project = projects.find(projectObj => {
     return projectObj.id === parseInt(req.params.id)
   })
