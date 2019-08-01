@@ -53,7 +53,7 @@ const projects = [
   [
     {
       id: 1,
-      name: "Placard",
+      name: "PLACARD",
       url: "https://placardny.herokuapp.com",
       img: "https://i.imgur.com/5Gf1TbN.png",
       type: "dev"
@@ -75,93 +75,91 @@ const projects = [
   ],
   [
     {
-      id: 1,
+      id: 4,
       name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/KwcAQXA.jpg",
       type: "design"
     },
     {
-      id: 2,
+      id: 5,
       name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/YbWPXP9.jpg",
       type: "design"
     },
     {
-      id: 3,
+      id: 6,
       name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/xK7T4qn.jpg",
       type: "design"
     },
     {
-      id: 4,
+      id: 7,
       name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/sh3etG0.jpg",
-      type: "design"
-    },
-
-
-    {
-      id: 5,
-      name: "5A Roasting Company (Branding & Identity)",
-      img: "https://i.imgur.com/24vmolS.jpg",
-      type: "design"
-    },
-    {
-      id: 6,
-      name: "5A Roasting Company (Branding & Identity)",
-      img: "https://i.imgur.com/Bsd4cZE.jpg",
-      type: "design"
-    },
-    {
-      id: 7,
-      name: "5A Roasting Company (Branding & Identity)",
-      img: "https://i.imgur.com/gklKPFn.jpg",
       type: "design"
     },
     {
       id: 8,
       name: "5A Roasting Company (Branding & Identity)",
-      img: "https://i.imgur.com/MwBNzIX.jpg",
+      img: "https://i.imgur.com/24vmolS.jpg",
       type: "design"
     },
     {
       id: 9,
+      name: "5A Roasting Company (Branding & Identity)",
+      img: "https://i.imgur.com/Bsd4cZE.jpg",
+      type: "design"
+    },
+    {
+      id: 10,
+      name: "5A Roasting Company (Branding & Identity)",
+      img: "https://i.imgur.com/gklKPFn.jpg",
+      type: "design"
+    },
+    {
+      id: 11,
+      name: "5A Roasting Company (Branding & Identity)",
+      img: "https://i.imgur.com/MwBNzIX.jpg",
+      type: "design"
+    },
+    {
+      id: 12,
       name: "EIS Housing (PSA)",
       img: "https://i.imgur.com/QXJke68.jpg",
       type: "design"
     },
     {
-      id: 10,
+      id: 13,
       name: "EIS Housing (PSA)",
       img: "https://i.imgur.com/xN4T9xK.jpg",
       type: "design"
     },
     {
-      id: 11,
+      id: 14,
       name: "EIS Housing (PSA)",
       img: "https://i.imgur.com/iGDdcgU.jpg",
       type: "design"
     },
     {
-      id: 12,
+      id: 15,
       name: "Monk Brewery (Branding & Identity)",
       img: "https://i.imgur.com/jOe9UAL.jpg",
       type: "design"
     },
     {
-      id: 13,
+      id: 16,
       name: "Monk Brewery (Branding & Identity)",
       img: "https://i.imgur.com/XZxOEKL.jpg",
       type: "design"
     },
     {
-      id: 14,
+      id: 17,
       name: "Joy (Essay by Zadie Smith)",
       img: "https://i.imgur.com/cyLfraF.jpg",
       type: "design"
     },
     {
-      id: 15,
+      id: 18,
       name: "Fictional BBC Magazine Spread",
       img: "https://i.imgur.com/M5PmDsu.jpg",
       type: "design"
@@ -174,18 +172,18 @@ app.get('/', (req,res) => {
   res.send('Hello World')
 })
 
-// app.get('/express-backend', (req,res) => {
-//   // res.send({express: 'Express backend is now connected to React frontend!'})
-//   res.send(projects)
-// })
+app.get('/express-backend', (req,res) => {
+  res.send({express: 'Express backend is now connected to React frontend!'})
+  // res.send(projects)
+})
 
-app.get('/api/projects', (req,res) => {
-// app.get('https://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
+// app.get('/api/projects', (req,res) => {
+app.get('https://jonathanchoi-api.herokuapp.com/api/projects', (req,res) => {
   res.send(projects)
 })
 
-app.get('/api/projects/:id', (req,res) => {
-// app.get('https://jonathanchoi-api.herokuapp.com/api/projects/:id', (req,res) => {
+// app.get('/api/projects/:id', (req,res) => {
+app.get('https://jonathanchoi-api.herokuapp.com/api/projects/:id', (req,res) => {
   let project = projects.find(projectObj => {
     return projectObj.id === parseInt(req.params.id)
   })
