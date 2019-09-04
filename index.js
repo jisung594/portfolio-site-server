@@ -125,19 +125,19 @@ const projects = [
     {
       id: 12,
       name: "EIS Housing (PSA)",
-      img: "https://i.imgur.com/QXJke68.jpg",
+      img: "https://i.imgur.com/QXJke68.jpg?1",
       type: "design"
     },
     {
       id: 13,
       name: "EIS Housing (PSA)",
-      img: "https://i.imgur.com/xN4T9xK.jpg",
+      img: "https://i.imgur.com/xN4T9xK.jpg?1",
       type: "design"
     },
     {
       id: 14,
       name: "EIS Housing (PSA)",
-      img: "https://i.imgur.com/iGDdcgU.jpg",
+      img: "https://i.imgur.com/iGDdcgU.jpg?1",
       type: "design"
     },
     {
