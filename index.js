@@ -53,20 +53,27 @@ const projects = [
   [
     {
       id: 1,
+      name: "Interactive Periodic Table (WIP)",
+      url: "http://iptable.herokuapp.com/",
+      img: "https://i.imgur.com/BnZ7VVc.png",
+      type: "dev"
+    },
+    {
+      id: 2,
       name: "PLACARD",
       url: "https://placardny.herokuapp.com",
       img: "https://i.imgur.com/5Gf1TbN.png",
       type: "dev"
     },
     {
-      id: 2,
+      id: 3,
       name: "Cropscity",
       url: "http://cropscity.herokuapp.com",
       img: "https://i.imgur.com/CnxrZTJ.png",
       type: "dev"
     },
     {
-      id: 3,
+      id: 4,
       name: "Monk Brewsource",
       url: "https://monk-brewsource.herokuapp.com",
       img: "https://i.imgur.com/u2j4Xsp.png",
