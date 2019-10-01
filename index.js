@@ -56,28 +56,32 @@ const projects = [
       name: "Interactive Periodic Table (WIP)",
       url: "http://iptable.herokuapp.com/",
       img: "https://i.imgur.com/BnZ7VVc.png",
-      type: "dev"
+      type: "dev",
+      stack: "React | Express | MongoDB"
     },
     {
       id: 2,
       name: "PLACARD",
       url: "https://placardny.herokuapp.com",
       img: "https://i.imgur.com/5Gf1TbN.png",
-      type: "dev"
+      type: "dev",
+      stack: "React/Redux | Ruby on Rails | PostgreSQL"
     },
     {
       id: 3,
       name: "Cropscity",
       url: "http://cropscity.herokuapp.com",
       img: "https://i.imgur.com/CnxrZTJ.png",
-      type: "dev"
+      type: "dev",
+      stack: "React | Ruby on Rails | PostgreSQL"
     },
     {
       id: 4,
       name: "Monk Brewsource",
       url: "https://monk-brewsource.herokuapp.com",
       img: "https://i.imgur.com/u2j4Xsp.png",
-      type: "dev"
+      type: "dev",
+      stack: "Javascript | Ruby on Rails | PostgreSQL"
     }
   ],
   [
