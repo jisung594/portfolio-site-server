@@ -136,7 +136,7 @@ const projects = [
     {
       id: 12,
       name: "EIS Housing (PSA)",
-      img: "https://i.imgur.com/QXJke68.jpg?1",
+      img: "https://i.imgur.com/DlZG7hn.jpg",
       type: "design"
     },
     {
