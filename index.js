@@ -53,19 +53,19 @@ const projects = [
   [
     {
       id: 1,
-      name: "Interactive Periodic Table (WIP)",
-      url: "http://iptable.herokuapp.com/",
-      img: "https://i.imgur.com/V2wO2DM.png",
-      type: "dev",
-      stack: "React | Express | MongoDB"
-    },
-    {
-      id: 2,
       name: "PLACARD",
       url: "https://placardny.herokuapp.com",
       img: "https://i.imgur.com/5Gf1TbN.png",
       type: "dev",
       stack: "React/Redux | Ruby on Rails | PostgreSQL"
+    },
+    {
+      id: 2,
+      name: "Interactive Periodic Table (WIP)",
+      url: "http://iptable.herokuapp.com/",
+      img: "https://i.imgur.com/V2wO2DM.png",
+      type: "dev",
+      stack: "React | Express | MongoDB"
     },
     {
       id: 3,
