@@ -50,94 +50,104 @@ const projects = [
   ],
   [
     {
-      id: 4,
+      id: 5,
       name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/KwcAQXA.jpg",
       type: "design"
     },
     {
-      id: 5,
+      id: 6,
       name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/YbWPXP9.jpg",
       type: "design"
     },
     {
-      id: 6,
+      id: 7,
       name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/xK7T4qn.jpg",
       type: "design"
     },
     {
-      id: 7,
+      id: 8,
       name: "Batsu (Promotional Poster)",
       img: "https://i.imgur.com/sh3etG0.jpg",
       type: "design"
     },
     {
-      id: 8,
+      id: 9,
       name: "5A Roasting Company (Branding & Identity)",
       img: "https://i.imgur.com/24vmolS.jpg",
       type: "design"
     },
     {
-      id: 9,
+      id: 10,
       name: "5A Roasting Company (Branding & Identity)",
       img: "https://i.imgur.com/Bsd4cZE.jpg",
       type: "design"
     },
     {
-      id: 10,
+      id: 11,
       name: "5A Roasting Company (Branding & Identity)",
       img: "https://i.imgur.com/gklKPFn.jpg",
       type: "design"
     },
     {
-      id: 11,
+      id: 12,
       name: "5A Roasting Company (Branding & Identity)",
       img: "https://i.imgur.com/MwBNzIX.jpg",
       type: "design"
     },
     {
-      id: 12,
+      id: 13,
       name: "EIS Housing (PSA)",
       img: "https://i.imgur.com/DlZG7hn.jpg",
       type: "design"
     },
     {
-      id: 13,
+      id: 14,
       name: "EIS Housing (PSA)",
       img: "https://i.imgur.com/xN4T9xK.jpg?1",
       type: "design"
     },
     {
-      id: 14,
+      id: 15,
       name: "EIS Housing (PSA)",
       img: "https://i.imgur.com/iGDdcgU.jpg?1",
       type: "design"
     },
     {
-      id: 15,
+      id: 16,
       name: "Monk Brewery (Branding & Identity)",
       img: "https://i.imgur.com/jOe9UAL.jpg",
       type: "design"
     },
     {
-      id: 16,
+      id: 17,
       name: "Monk Brewery (Branding & Identity)",
       img: "https://i.imgur.com/XZxOEKL.jpg",
       type: "design"
     },
     {
-      id: 17,
+      id: 18,
       name: "Joy (Essay by Zadie Smith)",
       img: "https://i.imgur.com/cyLfraF.jpg",
       type: "design"
     },
     {
-      id: 18,
+      id: 19,
       name: "Fictional BBC Magazine Spread",
       img: "https://i.imgur.com/M5PmDsu.jpg",
       type: "design"
+    }
+  ],
+  [
+    {
+      id: 20,
+      name: "Tracer SCFX",
+      url: "https://tracerscfx.herokuapp.com",
+      img: "https://i.imgur.com/5Gf1TbN.png",
+      type: "wip",
+      stack: "React | Flask | Finnhub.io"
     }
   ]
 ]
