@@ -145,7 +145,7 @@ const projects = [
       id: 20,
       name: "Tracer SCFX",
       url: "https://tracerscfx.herokuapp.com",
-      img: "https://i.imgur.com/5Gf1TbN.png",
+      img: "https://i.imgur.com/aLHRrLH.jpg",
       type: "wip",
       stack: "React | Flask | Finnhub.io"
     }
